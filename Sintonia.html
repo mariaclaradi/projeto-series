@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintonia</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2>MDDF</h2>
+        <div class="container-links-header">
+            <a href="./home.html" class="links-header">Home</a>
+            <a href="./Login.html" class="links-header">Login</a>
+            <a href="./Cadastro.html" class="links-header">Cadastro</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="popup-container" id="popup-container">
+             <!--Essa janela irá aparecer caso o usuário tente colocar outra avaliação (Apertar o botão enviar mais que 1 vez)-->
+             <!--<div class="bg-popup">
+                <div id="popup" class="popup">
+                    <div class="popup-warn">
+                            <div class="text-popup">
+                                <h1>Calma ai!</h1>
+                                <p>Você já escreveu uma review antes.<br></p>
+                                <p>Deseja atualiza-la?</p>
+                            </div>
+                            <button id="botao" class="buttonY" onclick="yes()">Sim</button>
+                            <button id="botao" class="buttonN" onclick="no()">Não</button>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        
+        <div class="info-container">
+            <div class="titulo-serie">
+                <h1 style="margin: 20px;">Sintonia</h1>
+                <img src="./Assets/classificacao_16.png" style="height: 50px; width: 50px;">
+            </div>
+            <div class="info">
+                <p style="font-size: 30px; margin: 20px;"> Atualmente, Sintonia é um dos maiores sucessos nacionais no catálogo da Netflix. A série foi criada pelo Kondzilla, 
+                    o produtor musical que é referência no funk, e que hoje tem um dos maiores canais do Youtube do Brasil.<br>
+                    
+                    <br>A trama acompanha as histórias de Doni (Christian Malheiros), Nando (Jottapê) e Rita (Bruna Mascarenhas), jovens 
+                    moradores da mesma comunidade em São Paulo. Desde crianças, eles convivem com a dura realidade da pobreza, das drogas, conhecem a fé e a música. 
+                    Porém, devido a escolhas diferentes suas vidas tomam rumos opostos.<br>
+
+                    <br>A Netflix já divulgou a sinopse oficial da quarta temporada, confira: “Depois de sofrer um atentado bem quando tentava 
+                    uma saída do mundo do crime, Nando vai ter que lidar com as graves consequências impostas sobre seus amigos e família. A conta das escolhas 
+                    feitas chegou cara para o trio da Vila Áurea, mas sempre há um novo caminho para quem não aceita a derrota e acredita na força da amizade.<br>
+
+                    <br>A série também apresenta um panorama muito real das instituições criminosas e como elas se organizam. Em paralelo, vemos a explosão do funk e a 
+                    ascensão dos jovens talentos.<br>
+
+                    <br>Sintonia é uma série brasileira interessante, sem dúvida, e retrata bem a jornada de três adolescentes com muita 
+                    diversidade e talento que criam um arco atraente. Embora algumas partes tenham uma estética um tanto quanto exagerada, há conteúdo suficiente 
+                    para criar um drama envolvente de amadurecimento.<br>
+
+                    <br>A série brasileira Sintonia, lançada globalmente em 9 de agosto, pode ser vista como um teste para a Netflix avaliar sua 
+                    própria capacidade de aumentar sua audiência de fora dos Estados Unidos em uma fatia específica: a de jovens adultos. Já estabelecidos, especialmente 
+                    na Europa, com uma audiência mais madura, o futuro da Netflix, sua identidade e seu apelo como uma empresa pode depender de tal sucesso.<br>
+
+                <div class="capa-container">
+                    <img src="./Assets/sintonia.png" class="capa-serie">
+                    <div class="capa-info">
+                        <p class="capa-espec"><strong class="info-container-sobre">Onde assistir?</strong> Netflix</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Gêneros:</strong> Crime, Gore, Humor ácido, Drama adolescente</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Autores:</strong> KondZilla, Felipe Braga, Guilherme Moraes Quintella</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Criadores:</strong> KondZilla, Felipe Braga, Guilherme Moraes Quintella</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Temporadas:</strong> 3</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Lançamento:</strong> 9 de agosto de 2019 (Brasil)</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-review-user">
+            <h1>Avalie</h1>
+            <div style="margin-bottom: 10px;">
+                <label>Como você se sente sobre a série?</label>
+                <select type="text" id="rating-title" style="width: 100%; height: 45px;">
+                    <option></option>
+                    <option>Obra-Prima</option>
+                    <option>Excelente</option>
+                    <option>Minha série favorita</option>
+                    <option>Adorei</option>
+                    <option>Muito bom</option>
+                    <option>Bom</option>
+                    <option>Regular</option>
+                    <option>Deixa a desejar</option>
+                    <option>Ruim</option>
+                    <option>Muito Ruim</option>
+                    <option>Horrível</option>
+                    <option>Odiei</option>
+                    <option>Pior série que ja assisti</option>
+                </select>    
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="">Avaliação em estrelas</label>
+                <label>‎ </label>
+                <div>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="5">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="4">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="3">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="2">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="1">1 star</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>‎</label>
+                <div>
+                    <label>Escreva a sua opnião</label>
+                    <textarea type="text" id="user-rating" style="width: 98.5%; height: 90px;" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+            <button id="botao" class="button" onclick="enviar()">ENVIAR</button>
+        </div>
+
+        <div class="container-reviews">
+            <h1>Reviews dos usuários</h1>
+
+            <div id="user-review"></div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil1.jpg" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Marcio</p>
+                </div>
+
+                <strong class="titulo-review"> Muito Bom</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>Excelente! Mostra a realidade nua crua das ruas, da vida nas favelas, das oportunidades e falta de oportunidades dos jovens da periferia que quando não encontram seu futuro em atividades lícitas, resta o envolvimento na vida do crime...mostra os 2 lados da moeda: um obscuro do crime organizado e o outro das oportunidades de uma comunidade que luta pelos seus ideais.</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil6.jpg" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Jessica</p>
+                </div>
+
+                <strong class="titulo-review"> Regular</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★</p>
+                    <p>★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>A série é interessante ao demonstrar uma grande amizade em que os três amigos se tornam uma família e procuram se ajudar mesmo com os "corres" diferentes. No entanto, como tenho percebido em outras séries semelhantes, fica evidente a inversãode valores mais uma vez. Há uma intenção clara de querer macular a imagem da Polícia, sempre colocando os policiais como corruptos, enquanto que o traficante é um cara do bem, sangue bom. O bandido protege o MC, a irmã evangélica e os trabalhadores da Comunidade. Já quando tem um agiota pilantra é um policial que faz a proteção do cara, vinculando o bandido ao que é bom e o policial ao que é mau. É apenas uma análise minha, espero que não levem para o lado da política.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

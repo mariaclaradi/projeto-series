@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2>MDDF</h2>
+        <div class="container-links-header">
+            <a href="./home.html" class="links-header">Home</a>
+            <a href="./Login.html" class="links-header">Login</a>
+            <a href="./Cadastro.html" class="links-header">Cadastro</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="popup-container" id="popup-container">
+             <!--Essa janela irá aparecer caso o usuário tente colocar outra avaliação (Apertar o botão enviar mais que 1 vez)-->
+             <!--<div class="bg-popup">
+                <div id="popup" class="popup">
+                    <div class="popup-warn">
+                            <div class="text-popup">
+                                <h1>Calma ai!</h1>
+                                <p>Você já escreveu uma review antes.<br></p>
+                                <p>Deseja atualiza-la?</p>
+                            </div>
+                            <button id="botao" class="buttonY" onclick="yes()">Sim</button>
+                            <button id="botao" class="buttonN" onclick="no()">Não</button>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        
+        <div class="info-container">
+            <div class="titulo-serie">
+                <h1 style="margin: 20px;">Stranger things</h1>
+                <img src="/assets/classificacao_14.png" style="height: 50px; width: 50px;"> 
+            </div>
+            <div class="info">
+                <p style="font-size: 30px; margin: 20px;">"Situada no início dos anos 1980, Stranger Things se passa na cidade rural fictícia de Hawkins, Indiana. Como fachada, 
+                    o laboratório da região realizava experimentos científicos para o Departamento de Energia Americano, quando na realidade, os pesquisadores 
+                    ali investiram em experimentos com o paranormal e o sobrenatural, incluindo o uso de cobaias humanas. Não intencionalmente, eles criaram um 
+                    portal para uma dimensão alternativa conhecida como Mundo Invertido, o que iria impactar a vida dos residentes da pequena cidade.<br>
+
+                    <br>Em 1983, quando Will Byers (Noah Schnapp), um menino de 12 anos, desaparece misteriosamente, o xerife Jim Hopper (David Harbour) 
+                    inicia uma operação para encontrá-lo. Enquanto isso, Mike (Finn Wolfhard), Dustin (Gaten Matarazzo) e Lucas (Caleb McLaughlin), melhores amigos de Will, 
+                    decidem procurá-lo por conta própria.<br>
+
+                    <br>Mas as investigações acabam levando o grupo em direção aos experimentos secretos do governo e a Eleven (Millie Bobby Brown), 
+                    uma peculiar menina perdida na floresta. Assim como as crianças, a mãe Joyce Byers (Winona Ryder) está determinada e fará o impossível para rever o filho.<br>
+                    
+                    <br>Stranger Things 4 foi anunciada em 30 de setembro de 2019. A data de estreia só foi revelada pela Netflix em 17 de fevereiro de 2022 -- 
+                    e os novos episódios serão divididos em dois volumes: Volume 1 de Stranger Things 4 chega em 27 de maio de 2022. Volume 2 de Stranger Things 4 
+                    chega em 1º de julho de 2022.<br>
+
+                    <br>Em Stranger Things 4, Mike (Finn Wolfhard) e Eleven (Millie Bobby Brown) também receberam mais espaço para desenvolver 
+                    seu relacionamento durante a série, lidando com questões que envolvem a perda de poderes da número onze e seu frágil momento como vítima de bullying na nova escola.<br>
+
+                    <br>O que significa Stranger Things 4? Como o próprio nome diz, “Stranger Things” em tradução literal significa “Coisas Estranhas”. 
+                    Isso é condizente com os acontecimentos da história, onde os jovens se envolvem sem querer com “coisas estranhas” que trazem para o mundo real criaturas 
+                    pertencentes a outra dimensão.<br>
+
+                <div class="capa-container">
+                    <img src="./Assets/strangerthings.png" class="capa-serie">
+                    <div class="capa-info">
+                        <p class="capa-espec"><strong class="info-container-sobre">Onde assistir?</strong> Netflix</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Gêneros:</strong> Terror, Sobrenatural, Suspense, Drama, Mistério, Obra de Época</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Autores:</strong> Matt Duffer, Ross Duffer, Jessie Nickson-Lopez, Justin Doble, Kate Trefry, Paul Dichter</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Criadores:</strong> Matt Duffer, Ross Duffer</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Temporadas:</strong> 4</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Lançamento:</strong> 15 de julho de 2016 (EUA)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-review-user">
+            <h1>Avalie</h1>
+            <div style="margin-bottom: 10px;">
+                <label>Como você se sente sobre a série?</label>
+                <select type="text" id="rating-title" style="width: 100%; height: 45px;">
+                    <option></option>
+                    <option>Obra-Prima</option>
+                    <option>Excelente</option>
+                    <option>Minha série favorita</option>
+                    <option>Adorei</option>
+                    <option>Muito bom</option>
+                    <option>Bom</option>
+                    <option>Regular</option>
+                    <option>Deixa a desejar</option>
+                    <option>Ruim</option>
+                    <option>Muito Ruim</option>
+                    <option>Horrível</option>
+                    <option>Odiei</option>
+                    <option>Pior série que ja assisti</option>
+                </select>    
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="">Avaliação em estrelas</label>
+                <label>‎ </label>
+                <div>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="5">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="4">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="3">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="2">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="1">1 star</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>‎</label>
+                <div>
+                    <label>Escreva a sua opnião</label>
+                    <textarea type="text" id="user-rating" style="width: 98.5%; height: 90px;" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+            <button id="botao" class="button" onclick="enviar()">ENVIAR</button>
+        </div>
+
+        <div class="container-reviews">
+            <h1>Reviews dos usuários</h1>
+
+            <div id="user-review"></div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil14.jfif" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Bruna</p>
+                </div>
+
+                <strong class="titulo-review"> Adorei</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>MELHOR SÉRIE DO MUNDO!!!!! Assisti um milhão de vezes e não enjoô. É muito bom não só o enredo mas também a história inteira, os personagens são incríveis e suas personalidades são muito bem trabalhadas. Stranger Things apesar de possuir diversas referências de filmes dos anos 80 ainda consegue manter sua originalidade. A série é ótima e os atores também. Agrega muita coisa e é simplesmente incrível essa produção. O enredo é muito bem construído e trabalhado e amo como os personagens amadurecem durante as três temporadas da série. Adoro todos os arcos que são construídos ao longo dos episódios, envolvendo diversos personagens. AMO TODOS OS PERSONAGENS, especialmente o will, meu favorito e é totalmente incrível o desenvolvimento dele e dos outros personagens ao longo da série. Simplesmente INCRÍVEL!!! AMO ESSA SÉRIE!!!!!</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil16.jpg" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Jesse</p>
+                </div>
+
+                <strong class="titulo-review"> Adorei</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>É uma viagem nostálgica e muito gostosa de volta aos anos 80! Relembrei minha infância vivida nesta época, desde os filmes de terror que de uma forma moderna, mas muito representativa com aquelas melecas e geleias verdes que tinham nos filmes como Caça Fantasmas e Elvira a Rainha das Trevas, e nos fazem lembrar também clássicos com  Sexta Feira 13, A Hora do Pesadelo e vários e vários filmes de terror de vampiros que emergiram neste período. Não podemos esquecer do elenco impecável e todo visual fotográfico, efeitos, cenários, objetos e todos os detalhes que compõem esta série muito divertida para toda família que adora um suspense, terror, aventura, diversão e mistério totalmente imersa e bem extraída da grande década de 80.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

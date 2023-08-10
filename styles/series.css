@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0B2447;
+    margin: 3%;
+}
+
+a{
+    color: white;
+    font-size: 30px;
+    padding: 1%;
+    text-decoration: none;
+}
+
+.titulo__ano{
+    padding: 2%;
+}
+
+.titulo{
+    background-color: #A5D7E8;
+    color:#576CBC;
+    font-size: 40px;
+    text-align: center;
+}
+
+.corpo{
+    align-items: center;
+    display: flex;
+    margin-top: 3%;
+}
+
+.corpo__escrito{
+    padding: 2%;
+}
+
+.corpo__titulo{
+    background-color:#AEE2FF ;
+    color: #7286D3;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 1%;
+}
+
+.corpo__fundo{
+    background-color: white;
+}
+
+.corpo__texto{
+    color:  #19A7CE;
+    font-size: 30px;
+    padding: 1%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./styles/cadastro.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Cadastro</h1>
+        <form id="formulario">
+            <div class="half-box">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="nome" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16" data-only-letters>
+            </div>
+
+            <div class="half-box">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="sobrenome" placeholder="Digite seu sobrenome" data-required data-only-letters>
+            </div>
+
+            <div class="full-box">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" data-min-length="3" data-email-validate>
+            </div>
+
+            <div class="half-box">
+                <label for="password" >Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+            </div>
+
+            <div class="half-box">
+                <label for="passconfirmation">Confirme sua senha</label>
+                <input type="password" name="passconfirmation" id="password-confirm" placeholder="Digite sua senha novamente" data-equal="password">
+            </div>
+
+
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="entrar">
+            </div>
+
+            <div class="full-box">
+                <p>Já possui uma conta? <a href="./Login.html" id="redirect-cadastro">Faça o login</a></p>
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="./JS/log.js"></script>
+</body>
+</html>

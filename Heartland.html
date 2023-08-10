@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartland</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2>MDDF</h2>
+        <div class="container-links-header">
+            <a href="./home.html" class="links-header">Home</a>
+            <a href="./Login.html" class="links-header">Login</a>
+            <a href="./Cadastro.html" class="links-header">Cadastro</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="popup-container" id="popup-container">
+             <!--Essa janela irá aparecer caso o usuário tente colocar outra avaliação (Apertar o botão enviar mais que 1 vez)-->
+             <!--<div class="bg-popup">
+                <div id="popup" class="popup">
+                    <div class="popup-warn">
+                            <div class="text-popup">
+                                <h1>Calma ai!</h1>
+                                <p>Você já escreveu uma review antes.<br></p>
+                                <p>Deseja atualiza-la?</p>
+                            </div>
+                            <button id="botao" class="buttonY" onclick="yes()">Sim</button>
+                            <button id="botao" class="buttonN" onclick="no()">Não</button>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        
+        <div class="info-container">
+            <div class="titulo-serie">
+                <h1 style="margin: 20px;">Heartland</h1>
+                <img src="./Assets/classificacao_14.png" style="height: 50px; width: 50px;">
+            </div>
+            <div class="info">
+                <p style="font-size: 30px; margin: 20px;">A série se concentra não apenas no trabalho de Amy com os cavalos, mas também na dinâmica familiar da família Fleming, 
+                    incluindo a difícil relação de Amy com seu pai, Jack (interpretado por Shaun Johnston), um fazendeiro tradicional e teimoso.
+                    Além disso, a série aborda temas como a luta contra o abuso animal, questões familiares e românticas, e problemas sociais, 
+                    como a adoção de crianças e a luta contra a pobreza.
+                    <br>Ao longo de suas 14 temporadas, "Heartland" cativou uma legião de fãs em todo o mundo com sua história emocionante 
+                    e inspiradora, seus personagens cativantes e sua bela cinematografia das paisagens do Canadá.
+                    <br>"Heartland" combina paisagens deslumbrantes e um elenco cativante para retratar de forma autêntica a vida no campo.
+                    A série cativa os espectadores com sua narrativa emocionante, explorando temas como lealdade,
+                     superação e a importância do amor e da conexão entre humanos e animais.
+                     Com uma base de fãs global, "Heartland" se tornou uma das mais longas produções canadenses na história da televisão,
+                    conquistando o coração dos telespectadores ao redor do mundo.<br>
+
+                    <br>Se você gosta de dramas familiares e histórias edificantes sobre relacionamentos,
+                    a série Heartland pode ser uma boa escolha para você assistir.
+                    Eu pessoalmente gostei de ver a relação entre os personagens e como eles lidam com os problemas do dia a dia.
+                    Também fiquei interessado pelos cavalos e pelo cenário rural do Canadá.
+                    Algumas cenas me emocionaram e outras me divertiram.
+                    Além disso,
+                    credito que é possível aprender algo sobre a cultura e a história do país.<br>
+                        
+                    <br> É importante lembrar que a série possui muitos episódios e nem todos são igualmente bons.
+                    Alguns podem se tornar entediantes e é possível que eu discorde de algumas atitudes ou decisões dos personagens.
+                    É sempre importante lembrar que cada pessoa tem sua própria opinião e experiência ao assistir uma série de televisão,
+                    e o que pode ser agradável para um pode não ser para outro.</p>
+
+                <div class="capa-container">
+                    <img src="assets/heartland.jfif" class="capa-serie">
+                    <div class="capa-info">
+                        <p class="capa-espec"><strong class="info-container-sobre">Onde assistir?</strong> Netflix</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Gêneros:</strong>relacionados a cavalos, amizade, amor e superação de desafios pessoais e familiares</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Autores:</strong> Heather Conkie, Lauren Brooke, Mark Haroun, Ken Craw, MAIS.</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Criadores:</strong> Lauren Brooke</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Temporadas:</strong>16</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Lançamento:</strong>14 de outubro de 2007 (CAN)</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-review-user">
+            <h1>Avalie</h1>
+            <div style="margin-bottom: 10px;">
+                <label>Como você se sente sobre a série?</label>
+                <select type="text" id="rating-title" style="width: 100%; height: 45px;">
+                    <option></option>
+                    <option>Obra-Prima</option>
+                    <option>Excelente</option>
+                    <option>Minha série favorita</option>
+                    <option>Adorei</option>
+                    <option>Muito bom</option>
+                    <option>Bom</option>
+                    <option>Regular</option>
+                    <option>Deixa a desejar</option>
+                    <option>Ruim</option>
+                    <option>Muito Ruim</option>
+                    <option>Horrível</option>
+                    <option>Odiei</option>
+                    <option>Pior série que ja assisti</option>
+                </select>    
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="">Avaliação em estrelas</label>
+                <label>‎ </label>
+                <div>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="5">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="4">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="3">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="2">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="1">1 star</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>‎</label>
+                <div>
+                    <label>Escreva a sua opnião</label>
+                    <textarea type="text" id="user-rating" style="width: 98.5%; height: 90px;" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+            <button id="botao" class="button" onclick="enviar()">ENVIAR</button>
+        </div>
+
+        <div class="container-reviews">
+            <h1>Reviews dos usuários</h1>
+
+            <div id="user-review"></div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil6.jpg" class="foto-perfil" width="40px">
+                    <p class="nome-usu"> Sheila</p>
+                </div>
+                <strong class="titulo-review"> Excelente</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>Do nada olhando as opções da Netflix, me deparei com está série, de começo vendo que havia 13 temporadas, e levando em consideração que nunca me animei em ver séries tão longas, mas quando comecei a assistir, não me decepcionei, que série maravilhosa, me faz emocionar, me faz sorrir, acredito que é uma série que trás algumas realidades para meu cotidiano, trazendo consigo mudanças positivos, me fazendo ser reflexiva. Sou encantada com cada superação da Amy, acreditando que ela poderia ter mais sucesso ainda, mais as vezes se limita muito, podendo dar seguimento por exemplo no hipismo, barril. Ty me deixa aflita sendo tão indeciso ao relacionamento dos dois. Jack é maravilhoso, exemplo para todos os sentidos. Mallory deveria ter mais relevância, é deixada de lado a todo momento na série isso me incomoda bastante. Em fim. Série que tem todo meu respeito ❤️👏🏼</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil4.jpg" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Maria</p>
+                </div>
+
+                <strong class="titulo-review"> Deixa a desejar</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★</p>
+                    <p>★★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>Confusa, não ah amarração entre um episodio e outro. um balaio de gato.atores excelentes. Quase nunca tem senas que exige o aproveito deles. em algumas vezes que é  exigido mostram que são  grandes atores.Os escritores estavam perdidos. uma hora transformava a atriz principal em uma garotinha responsável e no mesmo episodio numa garota leviana e irresponsável uma coisas pertubadora. vergonha alheia mesmo.não  consigo passar pela série sentir como desperdicaram tanto tempo para fazer senas nada a ver com a história que se propôs. em alguns episódios. .no geral um bom passa tempo.O QUE ESSA TRAMA DEIXOU CLARO QUE QUANTIDADE NUMCA SERÁ SINÔNIMO QUALIDADE.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

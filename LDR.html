@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love, Death & Robots</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2>MDDF</h2>
+        <div class="container-links-header">
+            <a href="./home.html" class="links-header">Home</a>
+            <a href="./Login.html" class="links-header">Login</a>
+            <a href="./Cadastro.html" class="links-header">Cadastro</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="popup-container" id="popup-container">
+             <!--Essa janela irá aparecer caso o usuário tente colocar outra avaliação (Apertar o botão enviar mais que 1 vez)-->
+             <!--<div class="bg-popup">
+                <div id="popup" class="popup">
+                    <div class="popup-warn">
+                            <div class="text-popup">
+                                <h1>Calma ai!</h1>
+                                <p>Você já escreveu uma review antes.<br></p>
+                                <p>Deseja atualiza-la?</p>
+                            </div>
+                            <button id="botao" class="buttonY" onclick="yes()">Sim</button>
+                            <button id="botao" class="buttonN" onclick="no()">Não</button>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        
+        <div class="info-container">
+            <div class="titulo-serie">
+                <h1 style="margin: 20px;">Love, Death & Robots</h1>
+                <img src="./Assets/classificacao_18.png" style="height: 50px; width: 50px;">
+            </div>
+            <div class="info">
+                <p style="font-size: 30px; margin: 20px;">"Love, Death & Robots" é uma série de antologia de animação adulta que combina temas de ficção científica, fantasia, horror e humor negro.<br>
+
+                    <br>Cada episódio de "Love, Death & Robots" apresenta uma história independente, com sua própria animação única e estilo visual. A série aborda uma variedade de temas e conceitos, explorando narrativas curtas e intensas que variam de 6 a 20 minutos de duração. O conteúdo da série é destinado a um público adulto devido à sua linguagem, violência e cenas explícitas.<br>
+                    
+                    <br>Os episódios de "Love, Death & Robots" são diversificados em termos de enredo e estilo. Alguns apresentam histórias de ficção científica futurista, explorando temas como inteligência artificial, viagens no tempo, realidades virtuais e exploração espacial. Outros episódios mergulham no horror e no sobrenatural, apresentando monstros, criaturas assustadoras e situações macabras. Também há episódios que combinam elementos de fantasia e mitologia, abordando temas como deuses, criaturas mágicas e lendas folclóricas.<br>
+                    
+                    <br>Uma característica marcante de "Love, Death & Robots" é a sua abordagem visual impressionante. Cada episódio é animado de forma única, com estilos que variam de animação tradicional a animação computadorizada e até mesmo animação em stop motion. A qualidade visual da série é notável, com detalhes minuciosos, cores vibrantes e efeitos visuais impressionantes.<br>
+                    
+                    <br>A série recebeu elogios por sua abordagem ousada e inovadora, assim como por sua narrativa concisa. No entanto, também houve críticas em relação à falta de consistência na qualidade dos episódios, com alguns sendo considerados mais fortes do que outros.<br>
+
+                    <br>Cada temporada é uma experiência única e não há uma ordem específica para assistir aos episódios, permitindo que os espectadores escolham suas histórias preferidas.<br>
+
+                    <br>No geral, "Love, Death & Robots" é uma série intrigante que combina animação de alta qualidade com narrativas cativantes. Se você gosta de ficção científica, fantasia, horror e animação adulta, essa série pode ser uma escolha interessante.<br>
+                    
+                <div class="capa-container">
+                    <img src="./Assets/LDR_serie.jpg" class="capa-serie">
+                    <div class="capa-info">
+                        <p class="capa-espec"><strong class="info-container-sobre">Onde assistir?</strong> Netflix</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Gêneros:</strong> Série de televisão, Animação para adultos, Humor ácido, Terror, Animação, Fantasia científica</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Autores:</strong> Tim Miller, Alberto Mielgo, Philip Gelatt, Vitaliy Shushko</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Criadores:</strong> David Fincher, Tim Miller</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Temporadas:</strong> 3</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Lançamento:</strong> 15 de março de 2019 (EUA)</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-review-user">
+            <h1>Avalie</h1>
+            <div style="margin-bottom: 10px;">
+                <label>Como você se sente sobre a série?</label>
+                <select type="text" id="rating-title" style="width: 100%; height: 45px;">
+                    <option></option>
+                    <option>Obra-Prima</option>
+                    <option>Excelente</option>
+                    <option>Minha série favorita</option>
+                    <option>Adorei</option>
+                    <option>Muito bom</option>
+                    <option>Bom</option>
+                    <option>Regular</option>
+                    <option>Deixa a desejar</option>
+                    <option>Ruim</option>
+                    <option>Muito Ruim</option>
+                    <option>Horrível</option>
+                    <option>Odiei</option>
+                    <option>Pior série que ja assisti</option>
+                </select>    
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="">Avaliação em estrelas</label>
+                <label>‎ </label>
+                <div>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="5">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="4">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="3">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="2">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="1">1 star</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>‎</label>
+                <div>
+                    <label>Escreva a sua opnião</label>
+                    <textarea type="text" id="user-rating" style="width: 98.5%; height: 90px;" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+            <button id="botao" class="button" onclick="enviar()">ENVIAR</button>
+        </div>
+
+        <div class="container-reviews">
+            <h1>Reviews dos usuários</h1>
+
+            <div id="user-review"></div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil12.jpg" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Jeferson</p>
+                </div>
+
+                <strong class="titulo-review"> Minha serie favorita</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>Gostei de todos os curtas da segunda temporada.
+                        A única ressalva que tenho para fazer é o número de episódios dessa temporada. Muito interior a primeira.
+                        Mas a qualidade está ótima. Tanto que eu vi potencial para muitos se tornarem um filme ou até mesmo uma série. Ficou o gostinho de "quero mais"</p>
+                </div>
+            </div>
+            
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil15.jpg" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Walter</p>
+                </div>
+    
+                <strong class="titulo-review"> Ótimo</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★</p>
+                    <p>★</p>
+                </div>
+    
+                <div class="opniao">
+                    <p>a segunda parte não atendeu minas expectativas, esperei tanto para ver esse conceitos loucos que a serie aborda muito bem, mas nessa segunda parte não me atraiu tanto parece que perdeu um pouca da essência da serie, além de o episodio que o astronauta é atacado pelo robô de manutenção estar com o áudio atrasado. Tirando isso as animações estão muito boas impecáveis como sempre, espero que a parte 3 tenha mais episódios XD</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

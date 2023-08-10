@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anne with an A</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2>MDDF</h2>
+        <div class="container-links-header">
+            <a href="./home.html" class="links-header">Home</a>
+            <a href="./Login.html" class="links-header">Login</a>
+            <a href="./Cadastro.html" class="links-header">Cadastro</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="popup-cantainer" id="popup-container">
+            <!--Essa janela irá aparecer caso o usuário tente colocar outra avaliação (Apertar o botão enviar mais que 1 vez)-->
+            <!--<div class="bg-popup">
+                <div id="popup" class="popup">
+                    <div class="popup-warn">
+                            <div class="text-popup">
+                                <h1>Calma ai!</h1>
+                                <p>Você já escreveu uma review antes.<br></p>
+                                <p>Deseja atualiza-la?</p>
+                            </div>
+                            <button id="botao" class="buttonY" onclick="yes()">Sim</button>
+                            <button id="botao" class="buttonN" onclick="no()">Não</button>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+        <div class="info-container">
+            <div class="titulo-serie">
+            <h1 style="margin: 20px;">Anne with an E</h1>
+            <img src="/assets/classificacao_12.png" style="height: 50px; width: 50px;">
+            </div>
+            
+            <div class="info">
+                <p style="font-size: 30px; margin: 20px;">Anne with an E" é uma série dramática baseada no amado romance "Anne de Green Gables" de Lucy Maud Montgomery. 
+                    Situada no final do século XIX, a história acompanha a vida de Anne Shirley, uma jovem órfã de 13 anos, inteligente, 
+                    imaginativa e com uma personalidade cativante.
+
+                    <br>Após uma infância difícil em orfanatos e lares adotivos, Anne é acidentalmente enviada para Green Gables, 
+                    uma fazenda na pacata cidade de Avonlea, no Canadá. Lá, ela é recebida por Matthew e Marilla Cuthbert, dois irmãos solteiros 
+                    de meia-idade que esperavam adotar um menino para ajudar nas tarefas da fazenda. Apesar do engano inicial, Anne rapidamente 
+                    conquista o coração dos Cuthbert com sua vivacidade e espírito indomável.
+
+                    <br>A série segue Anne em suas aventuras enquanto ela se adapta à vida em Avonlea, faz amizades sinceras e enfrenta 
+                    os desafios de crescer em uma sociedade conservadora. Ela luta contra o preconceito de gênero e as expectativas tradicionais 
+                    impostas às mulheres, desafiando as convenções da época com seu intelecto afiado e desejo de aprender. Ao longo de três 
+                    temporadas emocionantes, "Anne with an E" aborda temas como identidade, amor, amizade, resiliência e o poder da imaginação.
+
+                    <br>A série retrata a jornada de amadurecimento de Anne, explorando suas experiências, traumas e sonhos. Ela encontra 
+                    força e consolo na literatura e na natureza, desempenhando um papel ativo na transformação das vidas daqueles ao seu redor. Com 
+                    um elenco talentoso, cenários deslumbrantes e roteiros comoventes, "Anne with an E" captura a essência da história original, ao 
+                    mesmo tempo em que aborda questões relevantes para os dias de hoje.
+
+                    <br>"Anne with an E" é uma narrativa encantadora e inspiradora que toca o coração de jovens e adultos, celebrando a 
+                    individualidade e a resiliência, ao mesmo tempo em que lembra ao público sobre a importância de aceitar os outros como são e 
+                    de nunca perder a capacidade de sonhar.<br>
+
+                    <br>Anne with an E é uma série interessante e envolvente que explora a personalidade complexa e a imaginação de Anne. Eu gosto da forma como a série mostra o crescimento e o amadurecimento de Anne e dos outros personagens. Eu também gosto da forma como a série retrata a época e o lugar em que se passa a história. Eu acho que a série é uma boa adaptação do livro, mas também tem 
+                    ua própria identidade.<br>
+                </p>
+                <div class="capa-container">
+                    <img class="capa-serie" src="assets/anne.jfif" alt="Anne with an A">
+                    <div class="capa-info">
+                        <p class="capa-espec"><strong>Onde assistir: </strong>Netflix</p>
+                        <p class="capa-espec"><strong>Gêneros: </strong>Drama, Aventura, Coming-of-Age, Romance, Histórico</p>
+                        <p class="capa-espec"><strong>Autores: </strong>Jane Maggs, Shernold Edwards, Kathryn Borel</p>
+                        <p class="capa-espec"><strong>Criadores: </strong>Moira Walley-Beckett, Lucy Maud Montgomery</p>
+                        <p class="capa-espec"><strong>Temporadas: </strong>3</p>
+                        <p class="capa-espec"><strong>Lançamento: </strong>19 de março de 2017 (CAN)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-review-user">
+            <h1>Avalie</h1>
+            <div style="margin-bottom: 10px;">
+                <label>Como você se sente sobre a série?</label>
+                <select type="text" id="rating-title" style="width: 100%; height: 45px;">
+                    <option></option>
+                    <option>Obra-Prima</option>
+                    <option>Excelente</option>
+                    <option>Minha série favorita</option>
+                    <option>Adorei</option>
+                    <option>Muito bom</option>
+                    <option>Bom</option>
+                    <option>Regular</option>
+                    <option>Deixa a desejar</option>
+                    <option>Ruim</option>
+                    <option>Muito Ruim</option>
+                    <option>Horrível</option>
+                    <option>Odiei</option>
+                    <option>Pior série que ja assisti</option>
+                </select>    
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="">Avaliação em estrelas</label>
+                <label>‎ </label>
+                <div>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5"/>
+                        <label for="star5" title="5" >5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4"/>
+                        <label for="star4" title="4">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3"/>
+                        <label for="star3" title="3">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2"/>
+                        <label for="star2" title="2">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1"/>
+                        <label for="star1" title="1">1 star</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>‎</label>
+                <div>
+                    <label>Escreva a sua opnião</label>
+                    <textarea type="text" id="user-rating" style="width: 98.5%; height: 90px;" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+            <button id="botao" class="button" onclick="enviar()">ENVIAR</button>
+        </div>
+
+        <div class="container-reviews">
+            <h1>Reviews dos usuários</h1>
+
+            <div id="user-review"></div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil8.jfif" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Marcelo</p>
+                </div>
+
+                <strong class="titulo-review"> Ótimo</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>Eu acho que a série é bem escrita e dirigida. Eu gosto da forma como a série usa flashbacks e sonhos para mostrar o 
+                        passado e os desejos de Anne. Eu também gosto da forma como a série usa a música e os cenários para criar uma atmosfera. Eu acho que 
+                        a série é fiel ao espírito do livro, mas também traz novos elementos e perspectivas. Eu acho que a série é uma homenagem à obra de 
+                        L.M. Montgomery, mas também uma obra original e criativa.</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil7.jfif" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Arnaldo</p>
+                </div>
+
+                <strong class="titulo-review"> Adorei</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>A série é incrível! Conversa com o público de um jeito simples e retrata assuntos a temporais.
+                        A série conversa muito bem com a época que ela se passa, tanto em questão de temas abordados e como eles são tratados tanto com a caracterização das roupas e cenários. 
+                        Em relação aos episódios, eles tem começo, meio e fim e abordam temas que são considerados "modernos" mas que no século XIX também existiam, mas eram pouco abordados. A história da série é cativante e os personagens são bem desenvolvidos tendo pensamentos e ideais diferentes mas que podem se completar se combinados da maneira certa.
+                        A série é ótima, tem uma história cativante, personagens incríveis e uma identidade visual maravilhosa, assistam.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

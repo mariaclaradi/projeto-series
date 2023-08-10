@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wandinha</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2>MDDF</h2>
+        <div class="container-links-header">
+            <a href="./home.html" class="links-header">Home</a>
+            <a href="./Login.html" class="links-header">Login</a>
+            <a href="./Cadastro.html" class="links-header">Cadastro</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="popup-container" id="popup-container">
+             <!--Essa janela irá aparecer caso o usuário tente colocar outra avaliação (Apertar o botão enviar mais que 1 vez)-->
+             <!--<div class="bg-popup">
+                <div id="popup" class="popup">
+                    <div class="popup-warn">
+                            <div class="text-popup">
+                                <h1>Calma ai!</h1>
+                                <p>Você já escreveu uma review antes.<br></p>
+                                <p>Deseja atualiza-la?</p>
+                            </div>
+                            <button id="botao" class="buttonY" onclick="yes()">Sim</button>
+                            <button id="botao" class="buttonN" onclick="no()">Não</button>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        
+        <div class="info-container">
+            <div class="titulo-serie">
+                <h1 style="margin: 20px;">Wandinha</h1>
+                <img src="./Assets/classificacao_12.png" style="height: 50px; width: 50px;">
+            </div>
+            <div class="info">
+                <p style="font-size: 30px; margin: 20px;">Wandinha" é uma série de comédia e drama que segue a vida da filha mais nova da família Addams,
+                    Wandinha (Jenna Ortega),
+                    enquanto ela tenta equilibrar sua vida escolar com os segredos sombrios de sua família.
+                     Ela frequenta a misteriosa Nevermore Academy, onde investiga mistérios estranhos e tenta desvendar os segredos obscuros de sua família,
+                    tudo enquanto navega pelos altos e baixos da adolescência.
+                    <br>A série é um spin-off da icônica franquia "A Família Addams" e tem um tom de humor negro e visual gótico.
+                    Os pais de Wandinha, Gomez (Luis Guzmán) e Morticia (Catherine Zeta-Jones),
+                    também lutam com seus próprios demônios pessoais enquanto tentam proteger sua família da ameaça desconhecida que paira sobre eles.
+                    Com uma combinação envolvente de elementos sobrenaturais e personagens excêntricos,
+                    "Wandinha" oferece uma visão nova e emocionante do universo dos Addams, explorando temas como amor, família e identidade.
+                    A série é uma experiência misteriosa e empolgante,
+                    que manterá o espectador preso à tela do começo ao fim.
+                <div class="capa-container">
+                    <img src="assets/wandinha.jfif" class="capa-serie">
+                    <div class="capa-info">
+                        <p class="capa-espec"><strong class="info-container-sobre">Onde assistir?</strong> Netflix</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Gêneros:</strong>dramática, suspense e terror</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Autores:</strong>Alfred Gough e Miles Millar, Charles Addams.</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Criadores:</strong> Alfred Gough Miles Millar</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Temporadas:</strong>1</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Lançamento:</strong>16 de novembro de 2022(EUA)</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <p style="font-size: 30px; margin: 20px;">
+                Cada Eu acredito que a série tenha tido um grande impacto na cultura popular,
+                influenciando muitas outras produções de comédia e fantasia que vieram depois dela.
+                 Além disso,
+                  a série foi adaptada para o cinema e também para outras mídias,
+                como jogos de videogame e livros.<br>
+                    
+                <br>A série original foi exibida na década de 1960 e apresenta a família Addams,
+                que é uma família excêntrica e macabra, mas também amorosa e unida.
+                 Embora a série seja baseada em elementos sombrios e até mesmo macabros,
+                ela é bastante engraçada e apresenta muitas situações absurdas e hilárias..</p>
+            </div>
+        </div>
+
+        <div class="container-review-user">
+            <h1>Avalie</h1>
+            <div style="margin-bottom: 10px;">
+                <label>Como você se sente sobre a série?</label>
+                <select type="text" id="rating-title" style="width: 100%; height: 45px;">
+                    <option></option>
+                    <option>Obra-Prima</option>
+                    <option>Excelente</option>
+                    <option>Minha série favorita</option>
+                    <option>Adorei</option>
+                    <option>Muito bom</option>
+                    <option>Bom</option>
+                    <option>Regular</option>
+                    <option>Deixa a desejar</option>
+                    <option>Ruim</option>
+                    <option>Muito Ruim</option>
+                    <option>Horrível</option>
+                    <option>Odiei</option>
+                    <option>Pior série que ja assisti</option>
+                </select>    
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="">Avaliação em estrelas</label>
+                <label>‎ </label>
+                <div>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="5">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="4">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="3">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="2">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="1">1 star</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>‎</label>
+                <div>
+                    <label>Escreva a sua opnião</label>
+                    <textarea type="text" id="user-rating" style="width: 98.5%; height: 90px;" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+            <button id="botao" class="button" onclick="enviar()">ENVIAR</button>
+        </div>
+
+        <div class="container-reviews">
+            <h1>Reviews dos usuários</h1>
+
+            <div id="user-review"></div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil13.jpg" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Wallace</p>
+                </div>
+                <strong class="titulo-review"> Excelente</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>Adorei essa série! É muito legal, cheia de referências e te prende do início ao fim. O final me surpreendeu muito pois era das pessoas que eu menos suspeitava que afinal era a grande vilã da série! O elenco atuou impecavelmente, muitos parabéns á Jenna Ortega, ela realmente sabe atuar muito bem! Adorei a parte dela dançando com O Tyler, foi realmente uma coreografia incrível improvisada pela própria atriz! Adorei esta série e quero já a segunda temporada!!!</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil17.png" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Walter</p>
+                </div>
+
+                <strong class="titulo-review"> Muito Bom</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>Amei a série, ela é uma obra única, e, com a wandinha nela, põe a palavra ÚNICA em negrito. Amei o humor sombrio da protagonista, o visual da série é gostoso de assistir pois mistura caracteristicas modernas com o rústico, o colorido com o neutro, mas tudo bem suave. A história foi incrível em enganar os telespectadores, mesmo sendo um pouco clichê ela conseguiu nos fazer criar muita teorias. Assisti com a minha esposa Skyler e ela adorou tambem. Efim, 5 estrelas</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil3.jfif" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Pessoa 3</p>
+                </div>
+    
+                <strong class="titulo-review"> Ótimo</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★★</p>
+                </div>
+    
+                <div class="opniao">
+                    <p>Review</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil4.jpg" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Pessoa 4</p>
+                </div>
+    
+                <strong class="titulo-review"> Excelente</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★</p>
+                    <p>★</p>
+                </div>
+    
+                <div class="opniao">
+                    <p>Review</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

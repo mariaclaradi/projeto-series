@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De volta aos 15</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2>MDDF</h2>
+        <div class="container-links-header">
+            <a href="./home.html" class="links-header">Home</a>
+            <a href="./Login.html" class="links-header">Login</a>
+            <a href="./Cadastro.html" class="links-header">Cadastro</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="popup-container" id="popup-container">
+             <!--Essa janela irá aparecer caso o usuário tente colocar outra avaliação (Apertar o botão enviar mais que 1 vez)-->
+             <!--<div class="bg-popup">
+                <div id="popup" class="popup">
+                    <div class="popup-warn">
+                            <div class="text-popup">
+                                <h1>Calma ai!</h1>
+                                <p>Você já escreveu uma review antes.<br></p>
+                                <p>Deseja atualiza-la?</p>
+                            </div>
+                            <button id="botao" class="buttonY" onclick="yes()">Sim</button>
+                            <button id="botao" class="buttonN" onclick="no()">Não</button>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        
+        <div class="info-container">
+            <div class="titulo-serie">
+                <h1 style="margin: 20px;">De Volta aos 15</h1>
+                <img src="/assets/classificacao_12.png" style="height: 50px; width: 50px;"> 
+            </div>
+            <div class="info">
+                <p style="font-size: 30px; margin: 20px;">"Com apenas 6 capítulos na primeira temporada, De Volta aos 15 foi lançada originalmente em 2022. 
+                    Também ambientada um universo nostálgico com o melhor dos anos 2000, a série acompanha Anita, uma mulher no auge dos 30 anos. 
+                    Durante a trama, o público mergulha na vida pacata da protagonista, que mora em um apartamento reformado, que não tem muitos amigos e nenhum sinal de amor.<br>
+
+                    <br>Um dia, Anita toma uma decisão surpreendente ao retornar à sua cidade natal e, de forma inesperada, é transportada para o passado, 
+                    recuperando a sua juventude aos 15 anos. Assim, por meio dessa viagem temporal, a protagonista embarca em uma aventura ao reencontrar amigos e vivenciando 
+                    situações que tornaram aquela época especial.<br>
+
+                    <br>O principal foco da história de De Volta aos 15 é mostrar como temas importantes impactam a vida de todos. Como o amor, 
+                    a amizade, o autoconhecimento e a busca constante por um lugar no mundo<br>
+
+                    <br>Na série De Volta aos 15, aos 30 anos de idade, Anita (Maisa) está extremamente infeliz com o caminho que sua vida tomou. 
+                    Cansada, ela encontra o primeiro blog que criou, aos 15 anos de idade. Desejando voltar para uma época em que tudo era mais fácil, a jovem adulta 
+                    fecha os olhos e, ao abrí-los, tem seu desejo realizado, voltando no tempo para o período que tanto queria, porém, com sua mentalidade atual.<br>
+                    
+                <div class="capa-container">
+                    <img src="./Assets/devoltaaos15.png" class="capa-serie">
+                    <div class="capa-info">
+                        <p class="capa-espec"><strong class="info-container-sobre">Onde assistir?</strong> Netflix</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Gêneros:</strong> Comédia, Romance, Família</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Autores:</strong> Alice Marcone, Bryan Ruffo, Janaina Tokitaka, Renata Kochen</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Criadora:</strong> Janaína Tokitaka</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Temporadas:</strong> 2</p>
+                        <p class="capa-espec"><strong class="info-container-sobre">Lançamento:</strong> 25 de fevereiro de 2022 (Brasil)</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-review-user">
+            <h1>Avalie</h1>
+            <div style="margin-bottom: 10px;">
+                <label>Como você se sente sobre a série?</label>
+                <select type="text" id="rating-title" style="width: 100%; height: 45px;">
+                    <option></option>
+                    <option>Obra-Prima</option>
+                    <option>Excelente</option>
+                    <option>Minha série favorita</option>
+                    <option>Adorei</option>
+                    <option>Muito bom</option>
+                    <option>Bom</option>
+                    <option>Regular</option>
+                    <option>Deixa a desejar</option>
+                    <option>Ruim</option>
+                    <option>Muito Ruim</option>
+                    <option>Horrível</option>
+                    <option>Odiei</option>
+                    <option>Pior série que ja assisti</option>
+                </select>    
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="">Avaliação em estrelas</label>
+                <label>‎ </label>
+                <div>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="5">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="4">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="3">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="2">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="1">1 star</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>‎</label>
+                <div>
+                    <label>Escreva a sua opnião</label>
+                    <textarea type="text" id="user-rating" style="width: 98.5%; height: 90px;" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+            <button id="botao" class="button" onclick="enviar()">ENVIAR</button>
+        </div>
+
+        <div class="container-reviews">
+            <h1>Reviews dos usuários</h1>
+
+            <div id="user-review"></div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil9.jpg" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Astolfo</p>
+                </div>
+
+                <strong class="titulo-review"> Adorei</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>A série é bem leve e gostosa de assistir. Tenho 32 anos e me deu uma nostalgia com as músicas e os acontecimentos, que foram bem típicos da minha época. Torcendo pra ter mais uma temporada, que essa maratonei em um dia. Os atores são ótimos, tudo perfeito. Vale muito a pena assistir.</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="foto-nome">
+                    <img src="./Assets/perfil10.jpg" class="foto-perfil" width="40px">
+                    <p class="nome-usu">Henrique</p>
+                </div>
+
+                <strong class="titulo-review"> Deixa a desejar</strong>
+                <div class="avaliacao">
+                    <p class="estrelas">★★★</p>
+                    <p>★★</p>
+                </div>
+
+                <div class="opniao">
+                    <p>A primeira temporada até que é boa. É leve, interessante, divertida, elenco muito bom. E faz umas reflexões importantes. A segunda, começa bem: os três primeiros episódios são super engraçados. Mas depois tudo desanda em um "enchimento de linguiça" e uma chatice sem fim. A série perde sua identidade.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:  rgb(0, 17, 72);
+    --secondary-color: rgb(255, 191, 0);
+}
+
+main{
+    color: white;
+}
+
+body{
+    background-color: #000000;
+    margin: 3%;
+    background-image: url(../Assets/BGhome.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-msg-ini{
+    margin-top: 550px; 
+    margin-bottom: 500px;
+}
+
+.titu-ini{
+    font-size: 80px;
+}
+
+.msg-ini{
+    font-size: 40px;
+}
+
+.titu-site{
+    font-size: 150px; 
+    margin-bottom: 150px; 
+    display: flex; 
+    justify-content: space-evenly;
+    color: var(--secondary-color);
+}
+
+.icones_plural{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    gap: 10px;
+    text-align: center;
+}
+
+.titulo-series{
+    font-size: 60px;
+    border-left: 1rem solid;
+    border-color: var(--secondary-color);
+    padding-left: 30px;
+}
+
+.serie-img{
+    width: 300px;
+}
+
+.icones_individual{
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.icones_individual:hover{
+    background-color: rgb(0, 67, 176);
+    padding: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
